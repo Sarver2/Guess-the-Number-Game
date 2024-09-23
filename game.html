@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="game-body">
+    <nav class="navbar">
+      <a href="index.html" class="heading"><h2>GUESS THE NUMBER GAME</h2></a>
+    </nav>
+    <div class="container">
+      <h1></h1>
+      <span class="rightNum" style="font-weight: 700"></span>
+      <div class="child child1">
+        <form>
+          <input type="text" placeholder="Enter a number to start the game" />
+          <button class="submit">Check</button>
+        </form>
+      </div>
+
+      <span class="refresh" style="font-size: 25px"></span>
+
+      <div class="attempts">
+        <p>Remaining: <span class="remaining">10</span></p>
+        <p>Previous Guess: <span class="previous-guess"></span></p>
+      </div>
+
+      <div class="instruction">
+        <h3 style="text-decoration: underline">Game Instruction</h3>
+        <ol type="1" style="text-align: left; margin-top: 15px">
+          <li>
+            Enter a number and click on submit button to get a guessing number
+          </li>
+          <li>you got only 10 attempts to guess the right number</li>
+          <li>Guessing number always be between 1 to 100</li>
+          <li>if your number is higher than it shows "your number is high"</li>
+          <li>if your number is lower than it shows "your number is Low"</li>
+          <li>Do not refresh the page</li>
+          <li>click anywhere on the screen to play this game again</li>
+        </ol>
+      </div>
+    </div>
+
+    <script defer src="app.js"></script>
+  </body>
+</html>

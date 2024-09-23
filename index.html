@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESS THE NUMBER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #home-body {
+      background-color: #003049;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .container2 {
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+    }
+
+    .homePage {
+      width: 300px;
+      height: 150px;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .start {
+      width: 100px;
+      font-size: larger;
+      background-color: #fcbf49;
+      color: #003049;
+      font-weight: 700;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .homeNav {
+      width: 100%;
+      height: 50px;
+      color: #fcbf49;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+  </style>
+  <body id="home-body">
+    <nav class="homeNav"><h2>GUESS THE NUMBER GAME</h2></nav>
+    <div class="container2">
+      <div class="homePage">
+        <h2 style="color: #f77f00">click on start button to play</h2>
+        <!-- <a href="game.html"><button class="start">Start</button></a> -->
+        <button class="start">Start</button>
+      </div>
+    </div>
+    <script defer src="app.js"></script>
+  </body>
+</html>
